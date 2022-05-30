@@ -1,2 +1,2 @@
-#Description for each script
+# Description for each script
 
