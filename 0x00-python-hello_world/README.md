@@ -14,7 +14,8 @@
  * Print 3 times a string stored in the variable str, followed by its first 9 characters.
 7. 6-concat.py
  * Print 3 times a string stored in the variable str, followed by its first 9 characters.
-
+8. 7-edges.py
+ * slice the string "Holberton" in to first 3 word, last 2 word and middle word.
 
 
 
