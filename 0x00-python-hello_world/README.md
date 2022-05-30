@@ -10,5 +10,7 @@
  * Print the integer stored in the variable number, followed by Battery street, followed by a new line.
 5. 4-print_float.py
  * Print the float stored in the variable number with a precision of 2 digits.
+6. 5-print_string.py
+ * Print 3 times a string stored in the variable str, followed by its first 9 characters.
 
 
