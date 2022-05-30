@@ -18,6 +18,8 @@
  * slice the string "Holberton" in to first 3 word, last 2 word and middle word.
 9. 8-concat_edges.py
  * Print object-oriented programming with Python, followed by a new line.
+10. 9-easter_egg.py
+ * A Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 
 
 
