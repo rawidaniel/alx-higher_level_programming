@@ -8,4 +8,4 @@ def no_c(my_string):
                 my_string = my_string[0:i] + my_string[i + 1:]
                 length -= 1
             i += 1
-        return my_string
+    return my_string
