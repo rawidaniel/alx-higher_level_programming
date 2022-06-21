@@ -1,10 +1,3 @@
-#!/usr/bin/pythone
-"""
-module 0-square
-Defines Square class
-"""
-
-
+#!/usr/bin/python3
 class Square:
-    """Square class"""
     pass
