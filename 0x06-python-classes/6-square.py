@@ -42,13 +42,13 @@ class Square:
             self.__position = value
     """Calculate the area of the square."""
     def area(self):
-        return self.size * self.size
+        return (self.size) ** 2
     """prints in stdout the square with the character #"""
     def my_print(self):
         if self.__size == 0:
             print()
         else:
             print("\n" * self.__position[1], end="")
-            print("\n".join([" " * self.__position[0] +
-                             "#" * self.__size
+            print("\n".join(["#" * self.__size if self.__position[1] > 0 else
+                             " " * self.__position[0] + "#" * self.__size
                              for rows in range(self.__size)]))
