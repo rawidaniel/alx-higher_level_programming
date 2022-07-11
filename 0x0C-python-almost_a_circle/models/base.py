@@ -127,9 +127,9 @@ class Base:
             an instance with all attributes
         """
         if cls.__name__ == "Rectangle":
-            dummy = cls(2, 4, 1, 1, 98)
+            dummy = cls(1, 1)
         if cls.__name__ == "Square":
-            dummy = cls(2, 1, 1, 98)
+            dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
 
