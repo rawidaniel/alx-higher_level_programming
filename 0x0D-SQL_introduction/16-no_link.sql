@@ -2,7 +2,9 @@
 -- Don’t list rows without a name value
 -- should display the score and the name (in this order)
 -- should be listed by descending score
+-- The database name will be passed as an argument to the mysql command
 
 SELECT score, name
 FROM second_table
+WHERE name IS NOT NULL AND name <> ''
 ORDER BY score DESC;
