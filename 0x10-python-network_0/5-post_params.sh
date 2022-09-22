@@ -1,3 +1,3 @@
 #!/bin/bash
 #takes in a URL, sends a POST request and displays the body of the response
-curl -s -X POST -d "gmail.com&subject=I will always be here for PLD" "$!"
+curl -s "$1" -X POST -d  "gmail.com&subject=I will always be here for PLD"
