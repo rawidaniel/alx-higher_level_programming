@@ -9,13 +9,14 @@ with the email as a parameter, and displays the body of the response
 
 import urllib.request
 import urllib.parse
-import sys
+from sys import argv
 
-values = {"email": sys.argv[2]}
-url = sys.argv[1]
-data = urllib.parse.urlencode(values)
-data = data.encode("ascii")
-req = urllib.request.Request(url, data)
+if __name__ == "__main__":
+    url = argv[1]
+    values = {'email': argv[2]}
 
-with urllib.request.urlopen(req) as respon:
-    print("Your email is: {}".format(respon.read().decode('UTF-8')))
+    data = urllib.parse.urlencode(values)
+    data = data.encode('ascii')
+    req = urllib.request.Request(url, data)
+    with urllib.request.urlopen(req) as response:
+        print(response.read().decode('utf-8'))
