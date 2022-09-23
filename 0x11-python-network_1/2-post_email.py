@@ -2,8 +2,8 @@
 """
 Module 2-post_email.py
 
-takes in a URL and an email, sends a POST request to the passed URL 
-with the email as a parameter, and displays the body of the response 
+takes in a URL and an email, sends a POST request to the passed URL
+with the email as a parameter, and displays the body of the response
 (decoded in utf-8)
 """
 
@@ -18,4 +18,4 @@ data = data.encode("ascii")
 req = urllib.request.Request(url, data)
 
 with urllib.request.urlopen(req) as respon:
-    print(respon.read().decode('UTF-8'))
+    print("Your email is: {}".format(respon.read().decode('UTF-8')))
