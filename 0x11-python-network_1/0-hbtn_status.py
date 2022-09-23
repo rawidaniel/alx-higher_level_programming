@@ -6,9 +6,9 @@ import urllib.request
 
 with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as req:
     respo = req.read()
-    cls = type(respo)
+    type_of_class = type(respo)
     data = respo.decode('UTF-8')
     print("Body response:")
-    print(f"    - type: {cls}")
-    print(f"    - content: {respo}")
-    print(f"    - utf8 content: {data}")
+    print(f"\t- type: {type_of_class}")
+    print(f"\t- content: {respo}")
+    print(f"\t- utf8 content: {data}")
