@@ -11,7 +11,7 @@ request(url, function (error, response, body) {
     films.forEach((element) => {
       element.characters.forEach((ele) => {
         if (ele.includes('18')) {
-          count++;
+          count += 1;
         }
       });
     });
